@@ -1,0 +1,20 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.back {
+  background-color: black;
+  min-height: 100vh;
+}
