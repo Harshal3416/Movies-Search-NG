@@ -12,13 +12,13 @@
 </nav>
 
 <nav class="navbar navbar-dark bg-dark center">
-  <div class="row center">
-    <div class="col-2"></div>
-    <div class="col-8">
+  <div class="container row center">
+    <div class="col-5"></div>
+    <div class="col-3">
       <span class="navbar-brand mb-0 h1">Movies Search</span>
     </div>
 
-    <div class="col-2">
+    <div class="col-4" style="display: flex; justify-content: center;">
       <img
         class="profile"
         (click)="profile = !profile"
@@ -36,23 +36,25 @@
   </button>
 </nav>
 
-<div class="back">
-  <div class="card" style="width: 18rem;" *ngFor="let movie of MovieData">
-    <img
-      *ngIf="movie.Poster !== 'N/A'"
-      class="card-img-top"
-      style="height: 350px;"
-      src="{{ movie.Poster }}"
-    />
-    <img
-      *ngIf="movie.Poster === 'N/A'"
-      class="card-img-top"
-      src="../assets/img/na.jpg"
-    />
+<div style="width: 100%;">
+  <div class="back">
+    <div class="card cardCss" *ngFor="let movie of MovieData">
+      <img
+        *ngIf="movie.Poster !== 'N/A'"
+        class="card-img-top"
+        style="height: 350px;"
+        src="{{ movie.Poster }}"
+      />
+      <img
+        *ngIf="movie.Poster === 'N/A'"
+        class="card-img-top"
+        src="../assets/img/na.jpg"
+      />
 
-    <div class="card-body">
-      <h5 class="card-title">{{ movie.Title }}</h5>
-      <p class="card-text">{{ movie.Year }}</p>
+      <div class="card-body cardBodyCss">
+        <h5 class="card-title">{{ movie.Title }}</h5>
+        <p class="card-text">{{ movie.Year }}</p>
+      </div>
     </div>
   </div>
 </div>

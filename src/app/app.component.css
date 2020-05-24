@@ -17,4 +17,16 @@
 .back {
   background-color: black;
   min-height: 100vh;
+  display: block;
+  text-align: center;
+}
+
+.cardCss {
+  width: 16rem;
+  display: inline-block;
+  margin: 3%;
+}
+
+.cardBodyCss {
+  display: inline-block;
 }
